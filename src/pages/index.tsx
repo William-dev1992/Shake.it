@@ -27,6 +27,7 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Início | move.it</title>
+          <script type="text/javascript" src="http://platform.twitter.com/widgets.js" defer/>
         </Head>
         <ExperienceBar />
 

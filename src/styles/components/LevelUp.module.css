@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .container{
@@ -16,7 +17,7 @@
   width: 100%;
   max-width: 400px;
   padding: 2rem 3rem;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   text-align: center;
   position: relative;
@@ -28,6 +29,8 @@
   color: var(--blue);
   background: url('/icons/levelup.svg') no-repeat center;
   background-size: contain;
+
+  text-shadow:  0px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .container strong {
@@ -50,3 +53,39 @@
 
   font-size: 0px;
 }
+
+a.twitterShareButtonLink{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.shareOnTwitter{
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  background: var(--blue-twitter);
+
+  border: none;
+  border-radius: 0 0 5px 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: filter 0.2s;
+}
+
+button.shareOnTwitter:hover{
+  filter: brightness(0.9);
+}
+
+button.shareOnTwitter img {
+  margin-left: 0.5rem;
+}
+

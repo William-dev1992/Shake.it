@@ -5,6 +5,8 @@ import styles from '../styles/components/LevelUp.module.css'
 export function LevelUpModal () {
   const { level, closeLevelUpModel } = useContext(ChallengesContext)
 
+  const Url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${"Mais um nível alcançado com sucesso!🎉🏆"}`
+
   return (
     <div className={styles.overlay}>
       <div className={styles.container}>
@@ -17,6 +19,12 @@ export function LevelUpModal () {
           <img src="/icons/close.svg" alt="Fechar modal"/>
         </button>
       </div>
+      <a href={Url} id="twitter-share-btt" rel="nofollow" target="_blank" className={styles.twitterShareButtonLink}>
+        <button className={styles.shareOnTwitter}>
+          Compartilhe no twitter 
+          <img src="/icons/twitter.svg" alt="Twitter icon"/>
+        </button>
+      </a>
     </div>
   )
 }
