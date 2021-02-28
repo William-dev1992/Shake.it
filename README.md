@@ -1,4 +1,4 @@
-# Move.it
+# Shake.it
 As the time passes by, we can more easily notice the effects of the life style that the majority of the devs live, a sedentary life. Back pain, eyes problems, muscles pain and the list goes on and on. This app comes to help the communit to try starting new healthy habits.
 
 ## Table of contents
